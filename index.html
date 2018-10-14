@@ -1,0 +1,1498 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui">
+<meta name="author" content="中软亚信(http://www.bjzryx.com)" />
+<meta name="keywords" content="中软亚信在线平台，教育软件，网校系统，考试系统，直播系统，面授报名，社区系统，教育系统，在线教育系统，教育软件" />
+<meta name="description" content="我们是一家专注在线教育领域系统研发与运营服务的互联网企业，旗下在线教育平台系统涵盖网校系统、直播系统、考试系统、面授报名、社区系统等教育系统，为用户群体，提供具有针对性智慧化教育解决方案。" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta content="telephone=no" name="format-detection" />
+<link rel="shortcut icon" href="http://edu.zrysj.com/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="http://edu.zrysj.com/static/inxweb/css/reset.css?v=1">
+<link rel="stylesheet" type="text/css" href="http://edu.zrysj.com/static/inxweb/css/global.css?v=1">
+<link rel="stylesheet" type="text/css" href="http://edu.zrysj.com/static/inxweb/css/web.css?v=1">
+<link rel="stylesheet" type="text/css" href="http://edu.zrysj.com/static/inxweb/css/theme.css?v=1">
+<link href="http://edu.zrysj.com/static/inxweb/css/mw_320_768.css?v=1" rel="stylesheet" type="text/css" media="screen and (min-width: 320px) and (max-width: 768px)">
+<title>首页-中软亚信在线平台-中软亚信在线平台</title>
+	<!--[if lt IE 9]><script src="http://edu.zrysj.com/static/common/html5.js"></script><![endif]-->
+<script type="text/javascript" src="http://edu.zrysj.com/static/common/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://edu.zrysj.com/static/common/qrcode/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="http://edu.zrysj.com/static/common/webutils.js?v=1"></script>
+<script type="text/javascript" src="http://edu.zrysj.com/static/inxweb/header/headerH5SearchCommon.js?v=1"></script><script type="text/javascript" src="http://edu.zrysj.com/static/inxweb/header/header.js?v=1"></script>
+<script type="text/javascript" src="http://edu.zrysj.com/static/inxweb/js/common.js?v=1"></script>
+
+<script type="text/javascript">
+    var baselocation = "http://edu.zrysj.com";
+    var keuploadSimpleUrl='http://edu.zrysj.com/image/keupload?';
+    var uploadServerUrl='http://edu.zrysj.com';
+    var uploadSimpleUrl="http://edu.zrysj.com/image/plupload?";
+    var pdfUploadAndImg='http://edu.zrysj.com/image/pdfUploadAndImg?';
+    var uploadShrinkDiagram='http://edu.zrysj.com/image/shrinkDiagram?';//å¾çä¸ä¼ å¸¦ç¼©åå¾
+    var staticServer='http://edu.zrysj.com';//éææå¡å¨ åå
+    var mobileRegex=/^1[0-9]{10}$/; //éªè¯ææºæ­£å
+    var emailRegex=/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/; //éªè¯é®ç®±æ­£å
+    var usernameRegex=/^[\u4e00-\u9fa5_a-zA-Z0-9-]{6,24}$/; //éªè¯é®ç®±æ­£å
+    var usernameRegex_info='账号支持英文、数字、减号或下划线且6-24个字符'; //éªè¯é®ç®±æ­£å
+    var numberRegex=/^[0-9]*$/; //éªè¯æ°å­æ­£å
+</script>
+
+	<style type="text/css">
+		.n-i-m-bottom{display: block}
+	</style>
+<script>
+        var judgeLearnGroup = 'OFF';
+        $(function () {
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "http://edu.zrysj.com/user/ajax/judgeLearnGroup",
+                async: false,
+                success: function (result) {
+                    if (result.success == true) {
+                        judgeLearnGroup = result.entity;
+                    }
+                }
+            });
+            if(judgeLearnGroup=='ON'){
+                $("#default3JudgeLearnGroup").show();
+            }else {
+                $("#default3JudgeLearnGroup").hide();
+            }
+        })
+	</script>
+</head>
+<body class="W-body">
+	<input type="hidden" id="mydomain" value=".zrysj.com"/>
+	<div class="in-wrap" >
+		<div class="h-mobile-mask"></div>
+		<div class="head-mobile">
+			<div class="head-mobile-box">
+				<section class="clearfix">
+					<div class="u-face-pic">
+						<img src="http://edu.zrysj.com/static/inxweb/img/avatar-boy.gif" alt="" class="userImgPhoto">
+					</div>
+					<h4 class="hLh30 txtOf">
+				<span class="fsize16 c-ccc userNameClass">
+					<span class="vam ml5" style="cursor:pointer;" onclick="lrFun()">登录</span>
+				</span>
+					</h4>
+					<div class="hLh30">
+						<a href="http://edu.zrysj.com/shopcart?command=queryShopCart" title="购物车" class="c-999 u-c-shopcar">购物车</a>
+					</div>
+				</section>
+				<nav class="mw-nav">
+					<ul class="clearfix">
+						<li><a href="/" title="首页" >首页</a></li>
+						<li><a href="/front/showcoulist" title="课程中心" >课程中心</a></li>
+						<li><a href="/front/teacherlist" title="名师团队" >名师团队</a></li>
+						<li><a href="/front/articlelist/article" title="资讯中心" >资讯中心</a></li>
+						<li><a href="http://www.gxfsn.org.cn/" title="食品安全协会" >食品安全协会</a></li>
+						<li><a href="http://bjzryx.com" title="开发中心" >开发中心</a></li>
+						</ul>
+				</nav>
+				<section class="u-m-dd">
+					<ul class="uM-list">
+						<li>
+							<a href="http://edu.zrysj.com/uc/index" title="我的课程">
+								我的课程
+							</a>
+						</li>
+						<li id="default3JudgeLearnGroup" style="display:none">
+							<a href="http://edu.zrysj.com/uc/learnGroup?sellType=COURSE" title="内部学习">
+								内部学习
+							</a>
+						</li>
+						<li>
+							<a href="http://edu.zrysj.com/uc/courseNote?sign=COURSE" title="我的笔记">
+								我的笔记
+							</a>
+						</li>
+						<li>
+							<a href="http://edu.zrysj.com/uc/myFavorites?sign=COURSE&type=COURSE" title="我的收藏">
+								我的收藏
+							</a>
+						</li>
+						<li>
+							<a href="/uc/letter" title="消息中心">
+								消息中心
+							</a>
+						</li>
+					</ul>
+					<ul class="uM-list">
+						<li>
+							<a href="http://edu.zrysj.com/uc/order/myOrderList" title="我的订单">
+								我的订单
+							</a>
+						</li>
+						<li>
+							<a href="http://edu.zrysj.com/uc/initUpdateUser/0" title="个人资料">
+								个人资料
+							</a>
+						</li>
+						</ul>
+					<div  id="mobileExitDiv" class="mt15 undis tac">
+						<a href="javascript:void(0)" title="退出" onclick="exit();" class="u-loginout">退出登录</a>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div class="main-warp">
+			<div class="main-infor">
+				<!-- 公共头引入 -->
+				<style>
+	.new-head-dwon-ewm {
+		width: 122px;
+	}
+</style>
+<!-- /global header begin-->
+<header id="header-3" class="all-header">
+	<section class="hear-3-top ">
+		<div class="container">
+			<div class="head-3-left">
+				<tt class="f-fM fsize12 c-666 vam">欢迎来到</tt>
+				<tt class="f-fM fsize12 c-master vam">中软亚信在线平台!</tt>
+			</div>
+			<div class="head-3-right fr">
+				<section class="h3-r-login">
+					<ul class="clearfix h3-r-l-list">
+						<li class="undis" id="no-login">
+							<a href="javascript:lrFun()" title="登录">
+								<em class="icon18 l2gio-icon mr5">&nbsp;</em>登录
+							</a>
+						</li>
+						<li class="pr undis loginedLiShow" id="is-login-one">
+							<a href="http://edu.zrysj.com/uc/letter" title="消息" id="headerMsgCountId">
+								<em class="news-2-icon">&nbsp;</em>
+							</a>
+							<q class="red-point" id="letterPoint" style="display: none">&nbsp;</q>
+						</li>
+						<li class="undis loginedLiShow">
+							<a href="javascript:void(0)" title="" class="h3-name">
+								<img src="" width="30" height="30" class="vam picImg" alt="">
+								<span class="vam disIb c-333" id="userName"></span>
+								<em class="h-r-user-dwon-sj h-r-user-dwon-sj-3"></em>
+							</a>
+							<div class="new-head-dwon-warp new-dwon-warp-all">
+								<div class="new-head-dwon-warp-info">
+									<em class="n-head-d-info-sj">
+										<img src="http://edu.zrysj.com/static/inxweb/img/new-head-d-sj.png">
+									</em>
+									<a href="http://edu.zrysj.com/uc/index" title="个人中心">个人中心</a>
+									<a href="javascript:void(0)" title="退出" onclick="exit();">退出</a>
+								</div>
+							</div>
+						</li>
+						<li class="h-r-user h-login-li">
+							<a href="javascript:void(0)" title="手机端" class="new-head-mobile">
+								<em class ="new-head-mobile-info new-head-mobile-info-1"></em>
+								<em class="h-r-user-dwon-sj h-r-user-dwon-sj-3"></em>
+							</a>
+							<div class="new-head-dwon-ewm new-dwon-warp-all">
+								<div class="new-head-dwon-ewm-info pr clearfix">
+									<em class="n-head-d-info-sj">
+										<img src="http://edu.zrysj.com/static/inxweb/img/new-head-d-sj.png">
+									</em>
+									<div class="n-h-dwon-ewm-li">
+										<div id="h5_qrcode"></div>
+										<p class="hLh20 tac c-666 f-fM fsize14 mt5">H5&微信</p>
+									</div>
+									</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</section>
+	<section class="hear-3-bottom">
+		<div class="container">
+			<h1 class="logo-3">
+				<a class="headerlogo" style="display: none;" href="http://edu.zrysj.com/" title="中软亚信在线平台">
+					<img src="http://edu.zrysj.com/images/upload/websiteLogo3/20180906/1536216216072.png" width="100%" alt="中软亚信在线平台">
+				</a>
+				<a class="headerfanhui" style="display: none" href="javascript:void (0)" onclick="goHistory('')" title="中软亚信在线平台">
+					<img src="http://edu.zrysj.com/static/inxweb/img/mo-back-3.png">
+				</a>
+			</h1>
+			<div class="h3-nav clearfix">
+				<div>
+					<aside class="fr">
+						<section class="search-3">
+							<div class="s-3-infor">
+								<form action="http://edu.zrysj.com/front/showcoulist" method="post" id="headerformSearch">
+									<input type="text" value="" id="headerSearchName" name="queryCourse.courseName" placeholder="请输入要查找的内容">
+									<a href="javascript:$('#headerformSearch').submit()" type="submit" title="搜索" class="seach-3-btn">
+										<img src="http://edu.zrysj.com/static/inxweb/img/d3-shear-ico.png">
+									</a>
+								</form>
+							</div>
+						</section>
+					</aside>
+					<ul class="h3-n-list clearfix fl">
+						<li><a href="/" title="首页" >首页</a></li>
+						<li><a href="/front/showcoulist" title="课程中心" >课程中心</a></li>
+						<li><a href="/front/teacherlist" title="名师团队" >名师团队</a></li>
+						<li><a href="/front/articlelist/article" title="资讯中心" >资讯中心</a></li>
+						<li><a href="http://www.gxfsn.org.cn/" title="食品安全协会" >食品安全协会</a></li>
+						<li><a href="http://bjzryx.com" title="开发中心" >开发中心</a></li>
+						</ul>
+				</div>
+				<div class="n-item-menu undis">
+					<section class="n-item-left" style="display: none">
+						<div class="n-i-m-top">
+							<a href="javascript:void(0)">
+								<em class="icon20 n-i-kcall">&nbsp;</em>
+								<tt class="vam f-fM">全部课程</tt>
+							</a>
+						</div>
+						<div class="n-i-m-bottom">
+							<section class="i-j-item i-j-it-all" style="visibility: hidden">
+										<div class="i-j-item-bx">
+											<div class="i-j-it-txt">
+												<span class="i-j-item-first-span fsize16 c-fff">食品安全员</span>
+												<a class="i-j-item-first-a fsize12 c-fff" href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=692">食品安全员</a>
+												<a class="i-j-item-first-a fsize12 c-fff" href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=693">食品从业人员</a>
+												</div>
+										</div>
+									</section>
+								<section class="i-j-item i-j-it-all" style="visibility: hidden">
+										<div class="i-j-item-bx">
+											<div class="i-j-it-txt">
+												<span class="i-j-item-first-span fsize16 c-fff">IT互联网</span>
+												<a class="i-j-item-first-a fsize12 c-fff" href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=694">java基础</a>
+												<a class="i-j-item-first-a fsize12 c-fff" href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=701">javaweb</a>
+												<a class="i-j-item-first-a fsize12 c-fff" href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=702">java框架1</a>
+												<a class="i-j-item-first-a fsize12 c-fff" href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=704">java框架2</a>
+												<a class="i-j-item-first-a fsize12 c-fff" href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=703">项目实战</a>
+												<a class="i-j-item-first-a fsize12 c-fff" href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=705">大数据</a>
+												</div>
+										</div>
+									</section>
+								<section class="n-i-m-more i-j-it-all">
+								<div class="i-j-item-bx">
+									<div class="DT-arrow">
+										<em>◆</em>
+										<span>◆</span>
+									</div>
+									<a class="f-fM" href="http://edu.zrysj.com/front/showcoulist">更多课程</a>
+								</div>
+							</section>
+						</div>
+					</section>
+					<section class="n-item-right n-item-right-op">
+						<div class="j-cateright-wrap">
+									<div class="v-i-tab-a clearfix">
+										<dl>
+											<dt class="fl">
+												<span class="c-master fsize16 f-fM">食品安全员</span>
+												<span class="f-fM fsize14 v-i-tab-line">|</span>
+											</dt>
+											<dd>
+												<a href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=692" class="c-666 fsize14 f-fM">食品安全员<tt class="f-fM fsize14 v-i-tab-line">/</tt></a>
+												<a href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=693" class="c-666 fsize14 f-fM">食品从业人员</a>
+												</dd>
+										</dl>
+										<div class="clear"></div>
+									</div>
+								</div>
+							<div class="j-cateright-wrap">
+									<div class="v-i-tab-a clearfix">
+										<dl>
+											<dt class="fl">
+												<span class="c-master fsize16 f-fM">IT互联网</span>
+												<span class="f-fM fsize14 v-i-tab-line">|</span>
+											</dt>
+											<dd>
+												<a href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=694" class="c-666 fsize14 f-fM">java基础<tt class="f-fM fsize14 v-i-tab-line">/</tt></a>
+												<a href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=701" class="c-666 fsize14 f-fM">javaweb<tt class="f-fM fsize14 v-i-tab-line">/</tt></a>
+												<a href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=702" class="c-666 fsize14 f-fM">java框架1<tt class="f-fM fsize14 v-i-tab-line">/</tt></a>
+												<a href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=704" class="c-666 fsize14 f-fM">java框架2<tt class="f-fM fsize14 v-i-tab-line">/</tt></a>
+												<a href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=703" class="c-666 fsize14 f-fM">项目实战<tt class="f-fM fsize14 v-i-tab-line">/</tt></a>
+												<a href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=705" class="c-666 fsize14 f-fM">大数据</a>
+												</dd>
+										</dl>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</section>
+				</div>
+				<aside class="mw-nav-btn">
+					<div class="mw-nav-icon"></div>
+				</aside>
+				<aside class="mw-nav-seach mw-nav-seach-d2 mw-nav-seach-d3">
+					<form action="http://edu.zrysj.com" method="post" id="headerformH5Search" onsubmit="searchKeyWord(this)">
+						<label>
+							<input type="text" value="" placeholder="" class="f-fM h1-mw-seach-input i_h_gb_s_input">
+							<a href="javascript:void(0)" onclick="$('#headerformH5Search').submit();" class="h2-mw-seach-ico h1-mw-seach-ico">&nbsp;</a>
+						</label>
+					</form>
+					<div class="exam-mo-test-time tac">
+						<span class="time c-fff f-fM vam examTimer"></span>
+						<a href="javascript:void(0)" onclick="timePause(this)" title="" class="de-over-btn timePauseTag"></a>
+						</div>
+				</aside>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</section>
+</header>
+<!-- /global header end-->
+<!-- 公共头引入 -->
+				
+<!-- 模板切换 -->
+<div class="mbqh-qt">
+	<ul>
+		</ul>
+</div>
+<style>
+	.mbqh-qt{width:32px;position: fixed;top:70px;left: 0;z-index: 9999999;}
+	.mbqh-qt ul li{display: block;width: 34px;height: 82px;position: absolute;}
+	.mbqh-qt ul li a {color: #fff;display: block;font-size: 14px;line-height: 18px;margin-top: 14px;padding: 0 0 0 6px;width: 20px;}
+	.mbqh-qt ul li.li-1{background: url("/static/inxweb/img/indexchange/li-3.png") no-repeat top left;z-index: 99;top:0px;right: 0;}
+	.mbqh-qt ul li.li-2{background: url("/static/inxweb/img/indexchange/li-3.png") no-repeat top left;z-index: 100;top:75px;right: 0;}
+	.mbqh-qt ul li.li-3{background: url("/static/inxweb/img/indexchange/li-3.png") no-repeat top left;z-index: 101;top:150px;right: 0;}
+
+	.mbqh-qt ul li.li-1:hover,.mbqh-qt ul li.li-1.current{background: url("/static/inxweb/img/indexchange/li-3-xz.png") no-repeat top left;}
+	.mbqh-qt ul li.li-2:hover,.mbqh-qt ul li.li-2.current{background: url("/static/inxweb/img/indexchange/li-3-xz.png") no-repeat top left;}
+	.mbqh-qt ul li.li-3:hover,.mbqh-qt ul li.li-3.current{background: url("/static/inxweb/img/indexchange/li-3-xz.png") no-repeat top left;}
+	.mbqh-qt ul li:hover a{text-decoration: none;}
+</style><div class="i-slide banner-slide">
+		<section>
+			<!-- 如果需要导航按钮 -->
+			<!-- 图片位置 -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+							<a target="_blank" href="/">
+								<img class="imgload" src="http://edu.zrysj.com/images/upload/image/20180906/1536243598179.png" alt="首页三Banner图片1">
+							</a>
+						</div>
+					<div class="swiper-slide">
+							<a target="_blank" href="/">
+								<img class="imgload" src="http://edu.zrysj.com/images/upload/image/20180909/1536501802983.png" alt="首页三Banner图片2">
+							</a>
+						</div>
+					</div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="pagination"></div>
+		</section>
+	</div>
+	<!-- /index slide -->
+<div class="new-Notice new-Notice-index3">
+				<section class="container">
+					<div class="new-Notice-warp">
+						<div class="n-notice-left">
+							<em class="n-notice-ico">&nbsp;</em>
+							<tt class="c-333 f-fM n-notice-name">公告</tt>
+						</div>
+						<ul class="new-Notice-ul">
+							<li class="clearfix">
+										<section class="n-notic-ul-info">
+											<a href="http://edu.zrysj.com/front/articleinfo/89" title="食品安全员" class="txtOf n-notic-ul-in-nr">食品安全员</a>
+										</section>
+									</li>
+								<li class="clearfix">
+										<section class="n-notic-ul-info">
+											<a href="http://edu.zrysj.com/front/articleinfo/88" title="正式上线啦" class="txtOf n-notic-ul-in-nr">正式上线啦</a>
+										</section>
+									</li>
+								</ul>
+						<a href="http://edu.zrysj.com/front/articlelist/webNotice" title="更多" class="c-master f-fM n-notice-more">更多&gt;&gt;</a>
+					</div>
+				</section>
+			</div>
+		<div id="aCoursesList" class="of index-bg">
+		<!-- /直播课程 开始 -->
+		<!-- /直播课程 结束 -->
+
+		<!-- /班级 开始 -->
+		<!-- /无数据提示 开始-->
+			<!-- /无数据提示 结束-->
+		<!-- /班级 结束 -->
+
+		<!--/分类课程开始  -->
+		<div class="of bg-fff  ">
+					<section class="container">
+						<header class="comm-title">
+							<div class="live-small-tit">
+								<span class="fr mt15 mr10 hyh">
+									<a class="c-master" href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=690" title="更多" onclick="">更多&gt;&gt;</a>
+								</span>
+								<h2 class="fl tac tit-header">
+									<span class="c-master">食品安全员</span>
+								</h2>
+								<ul class="clearfix">
+									<li class="current">
+										<a href="javascript:void(0)" onclick="selectSubject(690,this)">全部</a>
+									</li>
+									<li>
+											<a href="javascript:void(0)"onclick="selectSubject(692,this)">食品安全员</a>
+										</li>
+									<li>
+											<a href="javascript:void(0)"onclick="selectSubject(693,this)">食品从业人员</a>
+										</li>
+									</ul>
+							</div>
+						</header>
+							<section class="live-moblie-fl">
+								<a  onclick="selectSubject(692,this)" href="javascript:void(0)">食品安全员</a>
+								<a  onclick="selectSubject(693,this)" href="javascript:void(0)">食品从业人员</a>
+								</section>
+						<article class="live-no-title">
+							<div class="comm-course-list of">
+								<div class="com-live-no-box">
+									<div class="c-l-n-left">
+										<ul>
+											<li class="liv-fist-box">
+												<div class="d3-left-pic">
+													<img src="http://edu.zrysj.com/images/upload/image/20180906/1536241035347.png">
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="c-l-n-right d3-in-right">
+										<ul class="clearfix subject690">
+													<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/196">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536236324450.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="食品安全员4">
+																		</a>
+																	</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/196" title="食品安全员4">食品安全员4</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">17浏览</tt>
+																</span>
+																	</section>
+																</div>
+																	</div>
+														</li>
+												<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/195">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536235964742.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="食品安全知识">
+																		</a>
+																	</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/195" title="食品安全知识">食品安全知识</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">7浏览</tt>
+																</span>
+																	</section>
+																</div>
+																	</div>
+														</li>
+												<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/194">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536235819594.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="食品安全员3">
+																		</a>
+																	</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/194" title="食品安全员3">食品安全员3</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">7浏览</tt>
+																</span>
+																	</section>
+																</div>
+																	</div>
+														</li>
+												<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/193">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536235306960.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="食品安全员">
+																		</a>
+																	</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/193" title="食品安全员">食品安全员</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">11浏览</tt>
+																</span>
+																	</section>
+																</div>
+																	</div>
+														</li>
+												<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/186">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536218335120.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="食品安全员">
+																		</a>
+																	</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/186" title="食品安全员">食品安全员</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-master fsize14 f-fM">
+																			
+																					￥600.00</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">26浏览</tt>
+																</span>
+																	</section>
+																</div>
+																	</div>
+														</li>
+												</ul>
+												<ul style="display:none" class="clearfix subject692">
+													<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/196">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536236324450.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="食品安全员4">
+																		</a>
+																</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/196" title="食品安全员4">食品安全员4</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">17浏览</tt>
+																</span>
+																	</section>
+																</div>
+																</div>
+														</li>
+                                                        <li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/195">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536235964742.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="食品安全知识">
+																		</a>
+																</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/195" title="食品安全知识">食品安全知识</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">7浏览</tt>
+																</span>
+																	</section>
+																</div>
+																</div>
+														</li>
+                                                        <li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/194">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536235819594.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="食品安全员3">
+																		</a>
+																</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/194" title="食品安全员3">食品安全员3</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">7浏览</tt>
+																</span>
+																	</section>
+																</div>
+																</div>
+														</li>
+                                                        <li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/193">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536235306960.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="食品安全员">
+																		</a>
+																</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/193" title="食品安全员">食品安全员</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">11浏览</tt>
+																</span>
+																	</section>
+																</div>
+																</div>
+														</li>
+                                                        </ul>
+												<ul style="display:none" class="clearfix subject693">
+													</ul>
+												</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</article>
+					</section>
+				</div>
+			<div class="of bg-f8  ">
+					<section class="container">
+						<header class="comm-title">
+							<div class="live-small-tit">
+								<span class="fr mt15 mr10 hyh">
+									<a class="c-master" href="http://edu.zrysj.com/front/showcoulist?queryCourse.subjectId=224" title="更多" onclick="">更多&gt;&gt;</a>
+								</span>
+								<h2 class="fl tac tit-header">
+									<span class="c-master">IT互联网</span>
+								</h2>
+								<ul class="clearfix">
+									<li class="current">
+										<a href="javascript:void(0)" onclick="selectSubject(224,this)">全部</a>
+									</li>
+									<li>
+											<a href="javascript:void(0)"onclick="selectSubject(694,this)">java基础</a>
+										</li>
+									<li>
+											<a href="javascript:void(0)"onclick="selectSubject(701,this)">javaweb</a>
+										</li>
+									<li>
+											<a href="javascript:void(0)"onclick="selectSubject(702,this)">java框架1</a>
+										</li>
+									<li>
+											<a href="javascript:void(0)"onclick="selectSubject(704,this)">java框架2</a>
+										</li>
+									<li>
+											<a href="javascript:void(0)"onclick="selectSubject(703,this)">项目实战</a>
+										</li>
+									<li>
+											<a href="javascript:void(0)"onclick="selectSubject(705,this)">大数据</a>
+										</li>
+									</ul>
+							</div>
+						</header>
+							<section class="live-moblie-fl">
+								<a  onclick="selectSubject(694,this)" href="javascript:void(0)">java基础</a>
+								<a  onclick="selectSubject(701,this)" href="javascript:void(0)">javaweb</a>
+								<a  onclick="selectSubject(702,this)" href="javascript:void(0)">java框架1</a>
+								<a  onclick="selectSubject(704,this)" href="javascript:void(0)">java框架2</a>
+								<a  onclick="selectSubject(703,this)" href="javascript:void(0)">项目实战</a>
+								<a  onclick="selectSubject(705,this)" href="javascript:void(0)">大数据</a>
+								</section>
+						<article class="live-no-title">
+							<div class="comm-course-list of">
+								<div class="com-live-no-box">
+									<div class="c-l-n-left">
+										<ul>
+											<li class="liv-fist-box">
+												<div class="d3-left-pic">
+													<img src="http://edu.zrysj.com/images/upload/image/20180906/1536240653427.png">
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="c-l-n-right d3-in-right">
+										<ul class="clearfix subject224">
+													<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/192">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536231605838.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="大数据">
+																		</a>
+																	</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/192" title="大数据">大数据</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">15浏览</tt>
+																</span>
+																	</section>
+																</div>
+																	</div>
+														</li>
+												<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/191">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536231582538.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="项目实战">
+																		</a>
+																	</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/191" title="项目实战">项目实战</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">9浏览</tt>
+																</span>
+																	</section>
+																</div>
+																	</div>
+														</li>
+												<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/190">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536231550679.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="java框架2">
+																		</a>
+																	</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/190" title="java框架2">java框架2</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">4浏览</tt>
+																</span>
+																	</section>
+																</div>
+																	</div>
+														</li>
+												<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/189">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536231487590.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="java框架1">
+																		</a>
+																	</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/189" title="java框架1">java框架1</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">5浏览</tt>
+																</span>
+																	</section>
+																</div>
+																	</div>
+														</li>
+												<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/188">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536231154429.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="javaweb">
+																		</a>
+																	</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/188" title="javaweb">javaweb</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">5浏览</tt>
+																</span>
+																	</section>
+																</div>
+																	</div>
+														</li>
+												<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/187">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536223329285.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="java工程师">
+																		</a>
+																	</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/187" title="java工程师">java工程师</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">49浏览</tt>
+																</span>
+																	</section>
+																</div>
+																	</div>
+														</li>
+												</ul>
+												<ul style="display:none" class="clearfix subject694">
+													<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/187">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536223329285.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="java工程师">
+																		</a>
+																</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/187" title="java工程师">java工程师</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">49浏览</tt>
+																</span>
+																	</section>
+																</div>
+																</div>
+														</li>
+                                                        </ul>
+												<ul style="display:none" class="clearfix subject701">
+													<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/188">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536231154429.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="javaweb">
+																		</a>
+																</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/188" title="javaweb">javaweb</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">5浏览</tt>
+																</span>
+																	</section>
+																</div>
+																</div>
+														</li>
+                                                        </ul>
+												<ul style="display:none" class="clearfix subject702">
+													<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/189">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536231487590.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="java框架1">
+																		</a>
+																</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/189" title="java框架1">java框架1</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">5浏览</tt>
+																</span>
+																	</section>
+																</div>
+																</div>
+														</li>
+                                                        </ul>
+												<ul style="display:none" class="clearfix subject704">
+													<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/190">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536231550679.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="java框架2">
+																		</a>
+																</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/190" title="java框架2">java框架2</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">4浏览</tt>
+																</span>
+																	</section>
+																</div>
+																</div>
+														</li>
+                                                        </ul>
+												<ul style="display:none" class="clearfix subject703">
+													<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/191">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536231582538.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="项目实战">
+																		</a>
+																</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/191" title="项目实战">项目实战</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">9浏览</tt>
+																</span>
+																	</section>
+																</div>
+																</div>
+														</li>
+                                                        </ul>
+												<ul style="display:none" class="clearfix subject705">
+													<li class="">
+															<div class="cc-l-wrap">
+																<section class="course-img">
+																	<a href="http://edu.zrysj.com/front/couinfo/192">
+																		<img xsrc="http://edu.zrysj.com/images/upload/course/20180906/1536231605838.jpg" src="http://edu.zrysj.com/static/inxweb/img/coures.gif" class="img-responsive" alt="大数据">
+																		</a>
+																</section>
+																<div class="bg-f8 coure-bg-g">
+																	<h3 class="hLh30 txtOf">
+																		<a class="course-title fsize16 c-333" href="http://edu.zrysj.com/front/couinfo/192" title="大数据">大数据</a>
+																	</h3>
+																	<section class="mt10 hLh20 of">
+																<span class="fr">
+																	<tt class="c-green fsize12 f-fA">免费</tt>
+																	</span>
+																<span class="fl jgAttr c-ccc f-fA">
+																	<tt class="c-999 f-fA mr10">0人购买</tt>
+																	<tt class="c-999 f-fA">15浏览</tt>
+																</span>
+																	</section>
+																</div>
+																</div>
+														</li>
+                                                        </ul>
+												</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</article>
+					</section>
+				</div>
+			<!--分类课程结束  -->
+		<!-- /网校名师 开始 -->
+		<div class="of bg-f8">
+			<section class="container">
+				<header class="comm-title">
+					<span class="fr mt15 mr10 hyh"><a href="http://edu.zrysj.com/front/teacherlist" title="更多" class="c-master fsize14" >更多 &gt;</a></span>
+					<h2 class="fl tac tit-header">
+						<span class="c-333">名家讲师</span>
+					</h2>
+				</header>
+				<article class="live-no-title">
+					<div class="demo-teach-warp">
+						<ul class="clearfix demo-teach-list">
+								<li>
+										<div class="demo-t-l-warp d3-t-l-warp">
+											<a class="pic" href="http://edu.zrysj.com/front/teacher/92" title="黄生国" target="_self">
+												<img alt="黄生国" src="http://edu.zrysj.com/static/inxweb/img/avatar-boy.gif" xsrc="http://edu.zrysj.com/images/upload/teacher/20180914/1536912057802.jpg">
+												</a>
+											<h4 class="hLh30 tac txtOf unFw">
+												<a class="name fsize18 c-333 f-fM" href="http://edu.zrysj.com/front/teacher/92">黄生国</a>
+											</h4>
+											<input value="1" type="hidden">
+											<h5 class="hLh30 fsize14 c-999 f-fM tac txtOf unFw"></h5>
+											<div class="mt15 i-q-txt">
+												<input value="2" type="hidden">
+												<p class="c-999 f-fA">1965年6月15日生，湖南省长沙县人，汉族，大学本科毕业，广西毕业生就业促进会常务副会长，高考必备指南书，《赢在填志愿选专业》作者，广西大学生教材，《职业发展与就业指导》编委，第九章作者。广西亚洲厨神争霸赛点评评委。</p>
+											</div>
+										</div>
+									</li>
+								<li>
+										<div class="demo-t-l-warp d3-t-l-warp">
+											<a class="pic" href="http://edu.zrysj.com/front/teacher/90" title="中软亚信" target="_self">
+												<img alt="中软亚信" src="http://edu.zrysj.com/static/inxweb/img/avatar-boy.gif" xsrc="http://edu.zrysj.com/images/upload/teacher/20180906/1536233733200.jpg">
+												</a>
+											<h4 class="hLh30 tac txtOf unFw">
+												<a class="name fsize18 c-333 f-fM" href="http://edu.zrysj.com/front/teacher/90">中软亚信</a>
+											</h4>
+											<input value="1" type="hidden">
+											<h5 class="hLh30 fsize14 c-999 f-fM tac txtOf unFw"></h5>
+											<div class="mt15 i-q-txt">
+												<input value="2" type="hidden">
+												<p class="c-999 f-fA">很厉害的讲师。</p>
+											</div>
+										</div>
+									</li>
+								<li>
+										<div class="demo-t-l-warp d3-t-l-warp">
+											<a class="pic" href="http://edu.zrysj.com/front/teacher/80" title="潘新强" target="_self">
+												<img alt="潘新强" src="http://edu.zrysj.com/static/inxweb/img/avatar-boy.gif" xsrc="http://edu.zrysj.com/images/upload/teacher/20150915/1442297935589.jpg">
+												</a>
+											<h4 class="hLh30 tac txtOf unFw">
+												<a class="name fsize18 c-333 f-fM" href="http://edu.zrysj.com/front/teacher/80">潘新强</a>
+											</h4>
+											<input value="1" type="hidden">
+											<h5 class="hLh30 fsize14 c-999 f-fM tac txtOf unFw"></h5>
+											<div class="mt15 i-q-txt">
+												<input value="2" type="hidden">
+												<p class="c-999 f-fA">考研政治辅导实战派专家，全国考研政治命题研究组核心成员。</p>
+											</div>
+										</div>
+									</li>
+								<li>
+										<div class="demo-t-l-warp d3-t-l-warp">
+											<a class="pic" href="http://edu.zrysj.com/front/teacher/91" title="晓晓老师" target="_self">
+												<img alt="晓晓老师" src="http://edu.zrysj.com/static/inxweb/img/avatar-boy.gif" xsrc="http://edu.zrysj.com/images/upload/teacher/20180906/1536241038297.jpg">
+												</a>
+											<h4 class="hLh30 tac txtOf unFw">
+												<a class="name fsize18 c-333 f-fM" href="http://edu.zrysj.com/front/teacher/91">晓晓老师</a>
+											</h4>
+											<input value="1" type="hidden">
+											<h5 class="hLh30 fsize14 c-999 f-fM tac txtOf unFw"></h5>
+											<div class="mt15 i-q-txt">
+												<input value="2" type="hidden">
+												<p class="c-999 f-fA">北京大学硕士、</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+						</div>
+				</article>
+			</section>
+		</div>
+		<!-- /网校名师 结束 -->
+		<div class="bg-fff of">
+			<section class="container">
+				<header class="comm-title">
+					<span class="fr mt15 mr10 hyh"><a href="http://edu.zrysj.com/front/articlelist/article" title="更多" class="c-master fsize14" >更多 &gt;</a></span>
+					<h2 class="fl tac tit-header">
+						<span class="c-333">新闻资讯</span>
+					</h2>
+				</header>
+				<section class="in-new-box clerfix">
+					<div class="clearfix d2-in-news-warp mt30">
+						<article class="d2-i-ns-left">
+								<div class="d2-i-n-l-box of d3-i-n-l-box">
+									<ul class="clearfix">
+										<li>
+												<div class="inwarp">
+													<a class="pic-a-n d3-pic-a-n" href="http://edu.zrysj.com/front/articleinfo/38" title="中国在线教育发展现状分析">
+														<img xsrc="http://edu.zrysj.com/images/upload/article/20161223/1482459616819.jpeg" src="http://edu.zrysj.com/static/inxweb/img/news.gif"  alt="中国在线教育发展现状分析">
+													</a>
+													<a class="d3-name-news-in" href="http://edu.zrysj.com/front/articleinfo/38" title="中国在线教育发展现状分析">
+														<span class="txtOf f-fM dis c-333 fsize16 mt5">中国在线教育发展现状分析</span>
+													</a>
+													<div class="d3-nr-news-in mt5">
+														<p class="c-999 f-fM">近期，中国第一起侵犯网络课件著作权的刑事案件做出判决，苏州工业园区法院一审判决认定，颜某侵犯沪江网著作权罪的事实清楚、证据确实、充分，判决颜某有期徒刑一年，缓刑...</p>
+													</div>
+												</div>
+											</li>
+										<li>
+												<div class="inwarp">
+													<a class="pic-a-n d3-pic-a-n" href="http://edu.zrysj.com/front/articleinfo/23" title="雅思阅读能力提高有方法 文章精读可以这样做">
+														<img xsrc="http://edu.zrysj.com/images/upload/article/20150928/1443424285823.jpg" src="http://edu.zrysj.com/static/inxweb/img/news.gif"  alt="雅思阅读能力提高有方法 文章精读可以这样做">
+													</a>
+													<a class="d3-name-news-in" href="http://edu.zrysj.com/front/articleinfo/23" title="雅思阅读能力提高有方法 文章精读可以这样做">
+														<span class="txtOf f-fM dis c-333 fsize16 mt5">雅思阅读能力提高有方法 文章精读可以这样做</span>
+													</a>
+													<div class="d3-nr-news-in mt5">
+														<p class="c-999 f-fM">
+	关于雅思(课程)精读，首先，认真选择精读文章，只需10篇剑桥文章，你的成绩就可以在7.5以上。但这一前提是你不是流于形式，而是认真走心的读。
+	我一直认...</p>
+													</div>
+												</div>
+											</li>
+										</ul>
+								</div>
+							</article>
+						<article class="d2-i-ns-right">
+							<div class="d2-i-n-r-box">
+									<section class="d2-i-nr-body">
+										<ul class="d2-i-nr-b-list d3-i-nr-b-list">
+											<li class="li-1">
+													<div class="li-1-in">
+														<em class="d2-b-l-ico">&nbsp;</em>
+														<a href="http://edu.zrysj.com/front/articleinfo/38" title="" class="name f-fM c-666">中国在线教育发展现状分析</a>
+														<span class="time f-fM c-666">2016-12-22</span>
+													</div>
+												</li>
+											<li class="li-1">
+													<div class="li-1-in">
+														<em class="d2-b-l-ico">&nbsp;</em>
+														<a href="http://edu.zrysj.com/front/articleinfo/23" title="" class="name f-fM c-666">雅思阅读能力提高有方法 文章精读可以这样做</a>
+														<span class="time f-fM c-666">2015-09-27</span>
+													</div>
+												</li>
+											<li class="li-1">
+													<div class="li-1-in">
+														<em class="d2-b-l-ico">&nbsp;</em>
+														<a href="http://edu.zrysj.com/front/articleinfo/27" title="" class="name f-fM c-666">在线教育调查:时薪上万完全可能 有时上课到凌晨</a>
+														<span class="time f-fM c-666">2016-04-28</span>
+													</div>
+												</li>
+											<li class="li-1">
+													<div class="li-1-in">
+														<em class="d2-b-l-ico">&nbsp;</em>
+														<a href="http://edu.zrysj.com/front/articleinfo/17" title="" class="name f-fM c-666">中国军舰协助英、德等10国从也门撤侨225人</a>
+														<span class="time f-fM c-666">2015-04-01</span>
+													</div>
+												</li>
+											<li class="li-1">
+													<div class="li-1-in">
+														<em class="d2-b-l-ico">&nbsp;</em>
+														<a href="http://edu.zrysj.com/front/articleinfo/9" title="" class="name f-fM c-666">嘲讽陈年是很容易的事，但我更愿意祝他成功</a>
+														<span class="time f-fM c-666">2015-03-22</span>
+													</div>
+												</li>
+											<li class="li-1">
+													<div class="li-1-in">
+														<em class="d2-b-l-ico">&nbsp;</em>
+														<a href="http://edu.zrysj.com/front/articleinfo/7" title="" class="name f-fM c-666">中国首款学习习近平重要讲话APP上线</a>
+														<span class="time f-fM c-666">2015-03-22</span>
+													</div>
+												</li>
+											<li class="li-1">
+													<div class="li-1-in">
+														<em class="d2-b-l-ico">&nbsp;</em>
+														<a href="http://edu.zrysj.com/front/articleinfo/15" title="" class="name f-fM c-666">渠道之殇：三星手机中国没落背后</a>
+														<span class="time f-fM c-666">2015-04-01</span>
+													</div>
+												</li>
+											<li class="li-1">
+													<div class="li-1-in">
+														<em class="d2-b-l-ico">&nbsp;</em>
+														<a href="http://edu.zrysj.com/front/articleinfo/14" title="" class="name f-fM c-666">背水一战的任天堂</a>
+														<span class="time f-fM c-666">2015-03-23</span>
+													</div>
+												</li>
+											<li class="li-1">
+													<div class="li-1-in">
+														<em class="d2-b-l-ico">&nbsp;</em>
+														<a href="http://edu.zrysj.com/front/articleinfo/22" title="" class="name f-fM c-666">哈佛商学院院长：21世纪人人都需要创业精神</a>
+														<span class="time f-fM c-666">2015-09-27</span>
+													</div>
+												</li>
+											<li class="li-1">
+													<div class="li-1-in">
+														<em class="d2-b-l-ico">&nbsp;</em>
+														<a href="http://edu.zrysj.com/front/articleinfo/20" title="" class="name f-fM c-666">MBA过来人亲述：联考英语复习经验</a>
+														<span class="time f-fM c-666">2015-09-08</span>
+													</div>
+												</li>
+											</ul>
+									</section>
+								</div>
+							</article>
+					</div>
+				</section>
+			</section>
+		</div>
+	</div>
+	<input type="hidden" id="theme_color" value=""/>
+	<script type="text/javascript" src="http://edu.zrysj.com/static/inxweb/js/swiper-2.1.0.js"></script>
+	<script type="text/javascript" src="http://edu.zrysj.com/static/inxweb/front/index.js"></script>
+	<script type="text/javascript" src="http://edu.zrysj.com/static/inxweb/front/index3.js"></script>
+	<script type="text/javascript" src="http://edu.zrysj.com/static/inxweb/front/index_theme_color.js"></script><!-- 换肤 -->
+	<script type="text/javascript">
+		$(function () {
+            leftPicH();
+        })
+	</script>
+</div>
+		</div>
+	</div>
+	<div class="mo-footer">
+		<!-- 公共底引入 -->
+		<style type="text/css">
+	.bdsharebuttonbox .bds_tsina {
+		background-image: url("/static/inxweb/img/share-sina.png");
+		background-position: 0;
+	}
+	.bdsharebuttonbox .bds_weixin {
+		background-image: url("/static/inxweb/img/share-weixin.png");
+		background-position: 0;
+	}
+	.bdsharebuttonbox .bds_qzone {
+		background-image: url("/static/inxweb/img/share-qzone.png");
+		background-position: 0;
+	}
+</style>
+<script type="text/javascript" src="http://edu.zrysj.com/static/inxweb/front/footer.js?v=1"></script>
+<footer id="footer">
+	<section class="container">
+		<div class="b-foot">
+			<section class="fl col-80">
+				<section class="mr20">
+					<div class="find-box">
+						<h4 class="hLh30 txtOf">
+							<span class="fsize18 f-fM c-fff">友情链接</span>
+						</h4>
+						<ul class="flink-list clearfix">
+							<li><a href="htt://www.bjzrcx.com" title="营销官网" target="_blank">营销官网</a></li>
+							<li><a href="http://www.bjzryx.com" title="中软亚信" target="_blank">中软亚信</a></li>
+							<li><a href="http://www.dasenedu.com" title="达森科技" target="_blank">达森科技</a></li>
+							<li><a href="http://www.gxfsn.org.cn/" title="广西食品安全网" target="_blank">广西食品安全网</a></li>
+							</ul>
+						<div class="clear"></div>
+					</div>
+					<section class="b-f-link mt20">
+						<a href="/front/helpCenter" title="帮助中心" target="_blank">帮助中心</a>|
+						<a href="/front/helpCenter?id=194" title="联系我们" target="_blank">联系我们</a>|
+						<a href="/front/helpCenter?id=193" title="关于我们" target="_blank">关于我们</a>|
+						<span>服务热线：18515111884</span>
+						<span>Email：362794518@qq.com</span>
+						<span class="ml30">
+							<tt class="c-666 f-fM vam">交流群：</tt><tt class="c-666 f-fM vam mr20">①群</tt><tt class="c-666 f-fM vam">②群</tt></span>
+					</section>
+					<section class="b-f-link mt10">
+						<span>Copyright ©2013-2017 版权所有中软亚信（北京）科技有限公司京ICP备15053495号 京公网安备110802018055</span>
+						<span class="c-666">Powered by<a title="因酷教育软件" target="_blank" href="http://www.inxedu.com" class="c-666">因酷教育软件</a></span>
+						<!-- 统计代码 -->
+						<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1274894441'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1274894441%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></section>
+				</section>
+			</section>
+			<aside class="fl col-20 tar ewm-box">
+				<span class="disIb tac">
+					<img src="http://edu.zrysj.com/images/upload/image/20180906/1536215527232.jpg" alt="" class="dis" width="140" height="140">
+					<p class="hLh30 fsize14 c-999 f-fM mt10 tac">关注微信</p>
+				</span>
+				</aside>
+			<div class="clear"></div>
+
+		</div>
+	</section>
+</footer>
+<div class="r-fixed-wrap">
+	<div class="pr r-fix-box">
+		<ul class="r-fixed-ul">
+			<li id="goTopBtn" class="undis">
+				<a href="javascript: void(0)" title="返回顶部" class="bg-orange">
+					<em class="r-f-icon-3">&nbsp;</em><span>返回顶部</span>
+				</a>
+			</li>
+			<li class="foot-zixun" id="shopCart">
+				<a href="javascript:shopCartHtml()" title="查看详情" class="bg-orange pr" id="v-nav-first">
+					<em class="r-f-icon-4">&nbsp;</em><!-- <span>查看详情</span> -->
+					<tt class="shop-car-num" id="shopCartNum">0</tt>
+				</a>
+			</li>
+			<li class="foot-zixun">
+				<a href="https://www.bjzryx.com" target="_blank" title="在线咨询" class="bg-orange">
+					<em class="r-f-icon-1">&nbsp;</em><span>在线咨询</span>
+				</a>
+			</li>
+			<li class="foot-zixun">
+				<a href="JavaScript:void(0)" title="扫描关注" class="bg-orange">
+					<em class="r-f-icon-2">&nbsp;</em><span>扫描关注</span>
+					<div class="smgz-pic">
+						<img src="http://edu.zrysj.com/images/upload/online/20180905/1536114611839.jpg" width="150" height="150" class="dis"/>
+						<p class=" fsize14 f-fM c-666 tac">扫一扫，关注我们</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<div class="shopcar-box fr" id="shopcarthtml">
+
+		</div>
+	</div>
+</div>
+<!--手机端回到顶部 开始-->
+<div class="m-go-top-box">
+	<ul class="r-fixed-ul">
+		<li id="goTopBtn2" class="">
+			<a href="javascript: void(0)" title="返回顶部" class="bg-orange">
+				<em class="r-f-icon-3">&nbsp;</em><span>返回顶部</span>
+			</a>
+		</li>
+	</ul>
+</div>
+<!--手机端回到顶部 开始-->
+<section class="mo-foot">
+	<article class="mo-f-warp">
+		<ul class="clearfix mo-f-w-list" id="gn-ul">
+			<li style="width: 33.333333333333336%">
+					<a href="/">
+							<svg t="1486257228474" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" p-id="2464"  width="32" height="32">
+						<path d="M978.221 507.167l-469.737-439.203-469.737 437.913c-9.189 8.567-9.702 22.975-1.114 32.155 8.579 9.173 23.004 9.692 32.187 1.105l438.629-408.894 438.649 410.139c4.401 4.112 9.987 6.144 15.563 6.144 6.070 0 12.143-2.411 16.623-7.209 8.596-9.173 8.123-23.568-1.065-32.149v0zM978.221 507.167z" fill="#333333" p-id="2465"></path>
+						<path d="M834.88 516.187c-12.573 0-22.772 10.193-22.772 22.75v348.839h-182.185v-242.67h-242.91v242.67h-182.178v-348.839c0-12.557-10.189-22.75-22.771-22.75-12.59 0-22.777 10.193-22.777 22.75v394.338h273.275v-242.669h151.819v242.669h273.268v-394.338c0.001-12.557-10.201-22.75-22.768-22.75v0zM834.88 516.187z" fill="#333333" p-id="2466"></path>
+						<path d="M675.472 190.101h136.635v121.332c0 12.576 10.201 22.755 22.772 22.755 12.569 0 22.769-10.179 22.769-22.755v-166.831h-182.177c-12.576 0-22.777 10.174-22.777 22.75-0.001 12.572 10.201 22.75 22.777 22.75v0zM675.472 190.101z" fill="#333333" p-id="2467"></path>
+					</svg><p>首页</p>
+					</a>
+				</li>
+			<li style="width: 33.333333333333336%">
+					<a href="/front/showcoulist">
+							<svg t="1486257362855" class="icon" style="" viewBox="0 0 1024 1024" version="1.1"  p-id="5482" width="30" height="30">
+						<path d="M229.499951 913.188218c-48.914036-7.229658-80.168878-68.500117-58.45432-114.993011 17.700127-37.899168 77.866439-44.274366 114.710578-43.379996 12.209066 0.296759 22.588461-10.589173 22.588461-22.588461 0-214.33967 0-428.679339 0-643.020032 0-12.211113-10.349719-22.588461-22.588461-22.588461-79.519078 0-156.825768 13.127995-188.981119 97.637738-14.056134 36.941354-9.794064 79.658248-9.794064 118.503974 0 140.217509 0 280.435017 0 420.652526 0 34.616402-1.300622 69.511143 0 104.108103 3.175319 84.488253 66.817802 147.707087 151.284565 150.829194 116.201535 1.707898 521.665127 0.956791 671.114904 0 21.049409 0 27.852348-24.02723 15.972786-38.561247-39.46278-48.27754-42.548048-113.524566 0-161.04793 19.342534-21.60404-12.502755-53.66013-31.94455-31.94455-60.080354 67.105351-56.141648 156.255787 0 224.937029 5.324262-12.853749 10.648524-25.707498 15.972786-38.561247-208.42496 0-416.84992 0-625.27488 0-45.63434 0-90.661859 2.997264-124.948757-35.18843-31.254841-34.808784-26.997887-78.81709-26.997887-121.741715 0-125.962853 0-251.925706 0-377.88856 0-50.012044-1.000793-100.139721 0-150.142555 0.601704-30.04427 6.29231-57.972343 26.997887-81.227999 34.031071-38.22151 80.371492-35.18843 126.600373-35.18843-7.529487-7.529487-15.058974-15.058974-22.588461-22.588461 0 214.33967 0 428.679339 0 643.020032 7.529487-7.529487 15.058974-15.058974 22.588461-22.588461-60.922535-1.479701-144.667867 18.272155-161.406087 86.262666-16.9613 68.895113 19.038612 149.897985 93.140307 160.850431C245.930155 960.955128 258.202667 917.430846 229.499951 913.188218L229.499951 913.188218z" p-id="5483" fill="#333333"></path>
+						<path d="M361.056196 111.795179c137.728828 0 277.028431-6.541997 414.573063 0 56.018851 8.659217 110.147656 42.715871 112.727411 105.47217 0.642636 15.646352 0 31.460526 0 47.115064 0 88.575338 0 177.150676 0 265.72499 0 68.37732 0 136.75464 0 205.130937 7.529487-7.529487 15.058974-15.058974 22.588461-22.588461-183.296653 0-366.592282 0-549.888935 0 7.529487 7.529487 15.058974 15.058974 22.588461 22.588461 0-215.344556 0-430.688089 0-646.032646 0-29.069059-45.176922-29.117155-45.176922 0 0 215.344556 0 430.688089 0 646.032646 0 12.211113 10.349719 22.588461 22.588461 22.588461 183.296653 0 366.592282 0 549.888935 0 12.211113 0 22.588461-10.349719 22.588461-22.588461 0-156.952658 0-313.904293 0-470.856951 0-82.908268-11.682064-153.384389-102.450347-182.328605-30.673603-9.781784-66.485227-13.762445-102.756315-15.243169-69.480444-0.192382-73.621764-0.192382-116.468618-0.192382-83.601046 0-167.202093 0-250.802116 0C331.987137 66.618257 331.939041 111.795179 361.056196 111.795179z" p-id="5484" fill="#333333"></path><path d="M510.185678 94.477768c0 113.695458 0 227.390917 0 341.086375 0 24.375154 29.352515 28.110221 42.092677 11.400654 29.27986-38.400588 58.559721-76.801177 87.840604-115.201765-11.825326 1.523703-23.651676 3.047406-35.477003 4.571109 29.826306 38.400588 59.652612 76.801177 89.479941 115.201765 12.533454 16.136515 38.561247 1.967818 38.561247-15.972786 0-113.695458 0-227.390917 0-341.086375 0-29.069059-45.176922-29.117155-45.176922 0 0 113.695458 0 227.390917 0 341.086375 12.853749-5.324262 25.707498-10.648524 38.561247-15.972786-29.826306-38.400588-59.652612-76.801177-89.479941-115.201765-9.933233-12.788258-27.79095-5.508457-35.477003 4.572132-29.27986 38.400588-58.559721 76.801177-87.839581 115.201765 14.030551 3.800559 28.062126 7.600095 42.092677 11.400654 0-113.695458 0-227.390917 0-341.086375C555.3626 65.408709 510.185678 65.360614 510.185678 94.477768L510.185678 94.477768z" p-id="5485" fill="#333333"></path><path d="M361.056196 879.8049c165.349909 0 330.700841 0 496.05075 0 29.069059 0 29.117155-45.176922 0-45.176922-165.349909 0-330.700841 0-496.05075 0C331.987137 834.627978 331.939041 879.8049 361.056196 879.8049L361.056196 879.8049z" p-id="5486" fill="#333333"></path>
+					</svg><p>课程</p>
+					</a>
+				</li>
+			<li style="width: 33.333333333333336%">
+					<a href="javascript:h5FooterMyLogin();">
+							<svg t="1486257862430" class="icon" style="" viewBox="0 0 1024 1024" p-id="17785" width="32" height="32">
+						<path d="M511.674589 64.696488c-246.847038 0-446.956611 200.109574-446.956611 446.956611 0 94.231151 29.160133 181.651177 78.95012 253.727749 0 0 15.517415 21.547759 35.803437 9.270131 19.442818-11.768021 7.554046-34.44551 7.554046-34.44551-18.063401-24.635073-28.063149-46.14497-40.059368-74.507948-20.624736-48.762587-31.081902-100.589976-31.081902-154.044422 0-53.454446 10.457166-105.281835 31.081902-154.044422 19.931958-47.124274 48.477085-89.457428 84.842317-125.82266 36.365232-36.365232 78.698386-64.910359 125.82266-84.842317 48.762587-20.624736 100.589976-31.081902 154.044422-31.081902 53.454446 0 105.281835 10.457166 154.044422 31.081902 41.683355 17.630542 79.609129 42.012859 112.981191 72.572876l21.829168 21.586644c32.097022 34.219359 57.598836 73.345472 75.854619 116.506481 20.624736 48.762587 31.081902 100.589976 31.081902 154.044422 0 53.454446-10.457166 105.281835-31.081902 154.044422-19.931958 47.124274-48.477085 89.457428-84.842317 125.82266-5.247514 5.247514-10.634198 10.31288-16.127306 15.232936-7.247054-53.594639-33.886785-103.058191-76.816526-141.627624-24.589025-22.092158-53.120848-39.295981-84.133166-51.097772 46.131667-32.394804 76.2885-85.996606 76.2885-146.646941 0-98.902544-80.176041-179.078585-179.078585-179.078585s-179.078585 80.176041-179.078585 179.078585c0 60.651358 30.156834 114.252137 76.2885 146.646941-31.013341 11.80179-59.544141 29.005614-84.133166 51.097772-50.834782 45.671179-78.82937 106.616226-78.82937 171.609473 0 8.114818 0.179079 13.518898 1.193175 22.279423 0.470721 4.068665 1.876744 7.79964 3.970428 11.011798 4.293793 7.453762 10.69048 12.249999 10.69048 12.249999 71.334675 48.192605 157.330258 76.333526 249.897513 76.333526 246.848061 0 446.956611-200.109574 446.956611-446.956611S758.521626 64.696488 511.674589 64.696488zM383.761314 467.379757c0-34.167171 13.305027-66.288752 37.465287-90.447988 24.159236-24.159236 56.281841-37.465287 90.447988-37.465287s66.288752 13.305027 90.447988 37.465287c24.159236 24.159236 37.465287 56.281841 37.465287 90.447988s-13.305027 66.288752-37.465287 90.447988c-24.159236 24.159236-56.281841 37.465287-90.447988 37.465287s-66.288752-13.305027-90.447988-37.465287C397.066341 533.668509 383.761314 501.546927 383.761314 467.379757zM511.674589 907.444401c-53.454446 0-105.281835-10.457166-154.044422-31.081902-21.145599-8.943696-41.312918-19.643386-60.423161-31.984459-0.094144-2.240017-0.119727-4.589528-0.119727-7.643074 0-104.875582 96.263437-190.19783 214.58731-190.19783s214.58731 85.322248 214.58731 190.19783c0 2.555196-0.076748 5.127787-0.193405 7.701402-19.086707 12.319583-39.232536 22.99369-60.349483 31.92613C616.956424 896.987235 565.128011 907.444401 511.674589 907.444401z" p-id="17786"></path>
+					</svg><p>我的</p>
+					</a>
+				</li>
+			</ul>
+	</article>
+</section>
+<script>
+	setTimeout(function () {
+		try {
+			headerIndexSubject();//第二三版首页 专业 显示 处理
+		}catch (err){}
+
+	},100)
+</script>
+<!-- 公共底引入 -->
+	</div>
+	<div class="exam-foot-kst">
+		<div class="undis exam-f-kst-list clearfix h5ExamDatika">
+			<div class="dtk-box fl f-kst-fl-box fot-box-btn-js">
+				<div class="lin-right tac">
+					<svg t="1508738291238" class="icon" style="" viewBox="0 0 1024 1024" version="1.1"  p-id="2257" width="48" height="48"><defs><style type="text/css"></style></defs><path d="M816.655 962.058h-609.165c-56.524 0-102.506-46.111-102.506-102.806v-694.316c0-56.695 45.982-102.806 102.506-102.806h609.165c56.524 0 102.549 46.41 102.549 103.406v450.265c0 11.828-9.599 21.426-21.426 21.426s-21.426-9.599-21.426-21.426v-450.265c0-33.383-26.783-60.553-59.695-60.553h-609.165c-32.869 0-59.652 26.912-59.652 59.952v694.273c0 33.040 26.783 59.952 59.652 59.952h609.165c32.911 0 59.695-27.212 59.695-60.596v-81.25c0-11.828 9.599-21.426 21.426-21.426s21.426 9.599 21.426 21.426v81.25c0 57.082-45.982 103.491-102.549 103.491zM746.246 726.362h-182.171c-11.828 0-21.426-9.599-21.426-21.426s9.599-21.426 21.426-21.426h182.171c11.828 0 21.426 9.599 21.426 21.426s-9.599 21.426-21.426 21.426zM446.27 726.362h-182.214c-11.828 0-21.426-9.599-21.426-21.426s9.599-21.426 21.426-21.426h182.214c11.828 0 21.426 9.599 21.426 21.426s-9.556 21.426-21.426 21.426zM746.246 554.948h-182.171c-11.828 0-21.426-9.599-21.426-21.426s9.599-21.426 21.426-21.426h182.171c11.828 0 21.426 9.599 21.426 21.426s-9.599 21.426-21.426 21.426zM446.27 554.948h-182.214c-11.828 0-21.426-9.599-21.426-21.426s9.599-21.426 21.426-21.426h182.214c11.828 0 21.426 9.599 21.426 21.426s-9.556 21.426-21.426 21.426zM746.246 383.533h-182.171c-11.828 0-21.426-9.599-21.426-21.426s9.599-21.426 21.426-21.426h182.171c11.828 0 21.426 9.599 21.426 21.426s-9.599 21.426-21.426 21.426zM446.27 383.533h-182.214c-11.828 0-21.426-9.599-21.426-21.426s9.599-21.426 21.426-21.426h182.214c11.828 0 21.426 9.599 21.426 21.426s-9.556 21.426-21.426 21.426z" p-id="2258" ></path></svg>
+					<span class="f-fM c-666 fsize16 vam">答题卡</span>
+				</div>
+				<div class="gscz-ej-li gscz-ej-li-big">
+					<div class="n-test-right-card bg-fff">
+						<div class="title f-fM c-333 fsize16 disFw">
+							答题卡
+						</div>
+						<div class="card-da">
+							<div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tjsj-box fl f-kst-fl-box">
+				<div class="lin-right tac" onclick="formSubmit()">
+					<svg t="1508738342428" class="icon" style="" viewBox="0 0 1024 1024" version="1.1"  p-id="4141"  width="48" height="48"><defs><style type="text/css"></style></defs><path d="M872.30464 499.22048l0 417.18784L75.84768 916.40832 75.84768 157.89056l606.8224 0L682.67008 82.04288 37.92896 82.04288C16.95744 82.04288 0 99.0208 0 119.9616l0 834.36544C0 975.29856 16.95744 992.256 37.92896 992.256l872.2944 0c20.97152 0 37.92896-16.95744 37.92896-37.92896L948.15232 499.22048 872.30464 499.22048 872.30464 499.22048z" p-id="4142"></path><path d="M1024 69.00736c0-13.74208-11.15136-24.89344-24.89344-24.89344-6.52288 0-12.17536 2.82624-16.66048 6.94272L493.4144 600.17664 303.4112 411.41248 171.40736 540.70272l53.77024 0 267.48928 249.71264L1020.5184 81.07008C1022.58688 77.44512 1024 73.44128 1024 69.00736L1024 69.00736z" p-id="4143"></path></svg>
+					<span class="f-fM c-666 fsize16 vam">交卷</span>
+				</div>
+			</div>
+			<div class="gscz-box fl f-kst-fl-box fot-box-btn-js">
+				<div class="tac">
+					<svg t="1508738466385" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" p-id="10466"  width="48" height="48"><defs><style type="text/css"></style></defs><path d="M307.1 833.1c-14.1 0-26.4-19.3-26.4-41.3s12.3-41.3 26.4-41.3h627.8c14.1 0 26.4 19.3 26.4 41.3s-12.3 41.3-26.4 41.3H307.1z m0-282.7c-14.1 0-26.4-19.3-26.4-41.3 0-22 12.3-41.3 26.4-41.3h627.8c14.1 0 26.4 19.3 26.4 41.3 0 22-12.3 41.3-26.4 41.3H307.1z m0-282.6c-14.1 0-26.4-19.3-26.4-41.3s12.3-41.3 26.4-41.3h627.8c14.1 0 26.4 19.3 26.4 41.3s-12.3 41.3-26.4 41.3H307.1z" p-id="10467"></path><path d="M125.5 853.5c-10.8 0-21.4-2.9-30.8-8.3-19-11-30.9-31.5-30.8-53.4 0-22 11.8-42.5 30.8-53.4 9.4-5.4 20-8.3 30.8-8.3s21.5 2.9 30.8 8.3c19 11 30.8 31.5 30.8 53.4 0 10.8-2.9 21.5-8.3 30.9-10.8 19-31.3 30.8-53.3 30.8z m0.1-279.5c-10.8 0-21.5-2.9-30.8-8.3-19-11-30.9-31.5-30.8-53.4 0-22 11.8-42.4 30.8-53.4 9.4-5.4 20-8.3 30.8-8.3s21.5 2.9 30.8 8.3c19 11 30.8 31.5 30.8 53.4 0 22-11.8 42.5-30.8 53.4-9.3 5.4-20 8.3-30.8 8.3z m0-279.6c-10.8 0-21.5-2.9-30.8-8.3-19-11-30.9-31.5-30.9-53.4 0-22 11.8-42.5 30.8-53.4 9.4-5.4 20-8.3 30.8-8.3s21.5 2.9 30.8 8.3c19 11 30.8 31.5 30.8 53.4 0 22-11.8 42.4-30.8 53.4-9.2 5.5-19.9 8.3-30.7 8.3z" p-id="10468"></path></svg>
+					<span class="f-fM c-666 fsize16 vam">更多</span>
+				</div>
+				<div class="gscz-ej-li">
+					<ul class="gscz-ej-li-ul">
+						<li>
+								<a href="javascript:void(0)" onclick="dialog('温馨提示','练习题库',19);" title="" class="f-fM fsize16 c-666 current">下次再做</a>
+							</li>
+						<li>
+							<a href="javascript:void(0)" onclick="danti(this)" title="" class="f-fM fsize16 c-666">单题模式</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="exam-f-kst-tc-btn undis">
+			<a href="javascript:void(0)" onclick="dialog('提示','',20);" titile="退出">退出</a>
+		</div>
+	</div>
+	<section class="mo-all-seach-warp mo-all-seach-warp-2" id="wrapper">
+		<div class="mo-all-seach-infor">
+			<header class="comm-title">
+				<span class="fr mt5 sech-qx-all"><a href="javascript:void(0)" title="清空" class="c-master">取消</a></span>
+				<h2 class="fl tac tit-header">
+					<span class="c-333">近期搜索</span>
+				</h2>
+			</header>
+			<section class="no-data-wrap">
+				<section class="no-data-wrap">
+					<em class="icon30 no-data-ico">&nbsp;</em> <span class="c-666 fsize14 ml10 vam">没有相关数据，小编正在整理中...</span>
+				</section>
+			</section>
+			<section class="seach-group-all">
+				<ul>
+					</ul>
+			</section>
+		</div>
+	</section>
+	<script type="text/javascript" src="/static/common/socket.io/socket.io.js"></script>
+<input type="hidden" id="socketPort" value="3000"/>
+<input type="hidden" id="serverHostAddress" value="127.0.0.1"/>
+<input type="hidden" id="limitLogin" value="OFF"/>
+<script type="text/javascript">
+        var winW=$(window).width();
+        var boyH=$(window).height()-98;
+        $(".fot-box-btn-js").click(function () {
+            if($(this).hasClass("cur")){
+                $(".fot-box-btn-js").removeClass("cur");
+                $(this).children(".gscz-ej-li").hide();
+                //h5滚动时，右侧菜单定位有问题被隐藏，需要清除高度
+                $("body").css("height","");
+            }else {
+                $(".fot-box-btn-js").removeClass("cur");
+                $(this).addClass("cur");
+                $(".fot-box-btn-js").children(".gscz-ej-li").hide();
+                $(this).children(".gscz-ej-li").show();
+                $("body").css({"height":winW});
+            }
+        })
+        $(".gscz-ej-li-big").css({"width":winW,"height":boyH});
+
+	</script>
+	</body>
+</html>
